@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency-Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/466c49389d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div class="wrapper">
+  <div class="container">
+    <h1 id="heading">Currency Converter</h1>
+    <form action="" autocomplete="off">
+      <div class="inputBox">
+       <div class="amountInput common">
+        <p>Amount</p>
+       <div class="input-container">
+        <input type="text" value="" id="amount">
+       </div>
+       </div>
+       <div class="from common">
+        <p>From</p>
+       <div class="input-container">
+        <img src="https://flagsapi.com/IN/flat/64.png" alt="" class="flag">
+        <select name="from" id="">
+        
+        </select>
+       </div>
+       </div>
+      <div class="excahng">
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+      </div>
+       <div class="to common">
+        <p>To</p>
+        <div class="input-container">
+          <img src="https://flagsapi.com/US/flat/64.png" alt="" class="flag">
+        <select name="to" id="">
+         
+        </select>
+        </div>
+       </div>
+        
+
+      </div>
+      <div class="bottom">
+        <div class="result">
+        <p id="result">1 USD = <span>83.2764 INR</span></p>
+        <p id="reverseResult"></p>
+        </div>
+        <div class="exchangeBtn">
+          <button id="convertBtn">Convert</button>
+        </div>
+      </div>
+    </form>
+  </div>
+ </div>
+
+  <script src="countryList.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
